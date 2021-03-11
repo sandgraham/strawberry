@@ -1470,6 +1470,8 @@ resolve@^1.19.0:
 "strawberry@workspace:.":
   version: 0.0.0-use.local
   resolution: "strawberry@workspace:."
+  dependencies:
+    typescript: ^4.1.2
   languageName: unknown
   linkType: soft
 
