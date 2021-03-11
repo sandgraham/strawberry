@@ -1,0 +1,23 @@
+.Button {
+  outline: 0;
+  border: 0;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background: pink;
+  color: rgba(0,0,0,.75);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.Button:hover {
+  background: palevioletred;
+}
+
+.Button:active {
+  background: salmon;
+}
+
+.Button:focus-visible {
+  box-shadow: 0 0 0 2px red;
+}

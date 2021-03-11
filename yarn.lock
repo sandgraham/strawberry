@@ -2542,6 +2542,45 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@strawberry/design@*, @strawberry/design@workspace:design":
+  version: 0.0.0-use.local
+  resolution: "@strawberry/design@workspace:design"
+  dependencies:
+    "@babel/core": ^7.13.10
+    "@mdx-js/react": ^1.6.22
+    "@storybook/addon-actions": ^6.1.21
+    "@storybook/addon-docs": ^6.1.21
+    "@storybook/addon-essentials": ^6.1.21
+    "@storybook/addon-links": ^6.1.21
+    "@storybook/react": ^6.1.21
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    "@vitejs/plugin-react-refresh": ^1.3.1
+    babel-loader: ^8.2.2
+    core-js: ^3.9.1
+    react: ^17.0.0
+    react-dom: ^17.0.0
+    storybook-css-modules-preset: ^1.0.6
+    typescript: ^4.2.3
+    vite: ^2.0.5
+  languageName: unknown
+  linkType: soft
+
+"@strawberry/frontend@workspace:frontend":
+  version: 0.0.0-use.local
+  resolution: "@strawberry/frontend@workspace:frontend"
+  dependencies:
+    "@strawberry/design": "*"
+    "@types/react": ^17.0.0
+    "@types/react-dom": ^17.0.0
+    "@vitejs/plugin-react-refresh": ^1.3.1
+    react: ^17.0.0
+    react-dom: ^17.0.0
+    typescript: ^4.2.3
+    vite: ^2.0.5
+  languageName: unknown
+  linkType: soft
+
 "@types/anymatch@npm:*":
   version: 1.3.1
   resolution: "@types/anymatch@npm:1.3.1"
@@ -5373,29 +5412,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"design@workspace:design":
-  version: 0.0.0-use.local
-  resolution: "design@workspace:design"
-  dependencies:
-    "@babel/core": ^7.13.10
-    "@mdx-js/react": ^1.6.22
-    "@storybook/addon-actions": ^6.1.21
-    "@storybook/addon-docs": ^6.1.21
-    "@storybook/addon-essentials": ^6.1.21
-    "@storybook/addon-links": ^6.1.21
-    "@storybook/react": ^6.1.21
-    "@types/react": ^17.0.0
-    "@types/react-dom": ^17.0.0
-    "@vitejs/plugin-react-refresh": ^1.3.1
-    babel-loader: ^8.2.2
-    core-js: ^3.9.1
-    react: ^17.0.0
-    react-dom: ^17.0.0
-    typescript: ^4.2.3
-    vite: ^2.0.5
-  languageName: unknown
-  linkType: soft
-
 "destroy@npm:~1.0.4":
   version: 1.0.4
   resolution: "destroy@npm:1.0.4"
@@ -6489,20 +6505,6 @@ __metadata:
   checksum: 5f1a9bbff02d30cf5b4f12cfef20b47455876f8318b92d275ca39e3c5adf0636d3a0d8f4821a1c245339c47e79a551dce9ce5c7d9236c16347b934dc13d1d408
   languageName: node
   linkType: hard
-
-"frontend@workspace:frontend":
-  version: 0.0.0-use.local
-  resolution: "frontend@workspace:frontend"
-  dependencies:
-    "@types/react": ^17.0.0
-    "@types/react-dom": ^17.0.0
-    "@vitejs/plugin-react-refresh": ^1.3.1
-    react: ^17.0.0
-    react-dom: ^17.0.0
-    typescript: ^4.2.3
-    vite: ^2.0.5
-  languageName: unknown
-  linkType: soft
 
 "fs-extra@npm:^0.30.0":
   version: 0.30.0
@@ -11558,6 +11560,13 @@ fsevents@^1.2.7:
   version: 2.12.0
   resolution: "store2@npm:2.12.0"
   checksum: 517b66b6bed513668b10310b08980e722a919fa8b818262480c5f975575377aedfc40d9bd5de8b2ea0e05d82a830c8664273b1a8bd6169a1ff5020e18db9f88d
+  languageName: node
+  linkType: hard
+
+"storybook-css-modules-preset@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "storybook-css-modules-preset@npm:1.0.6"
+  checksum: 680feb1614b0be778c9ef7ddd0906cbf1f1b3defffd72becd070b9f6f8ac018f92593b3907980a25f2c76f8949c81426db8d8b7926752a373591ce86918f6ea0
   languageName: node
   linkType: hard
 
