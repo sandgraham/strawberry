@@ -1,3 +1,6 @@
 {
-  "name": "strawberry"
+  "name": "strawberry",
+  "workspaces": [
+    "design"
+  ]
 }
