@@ -11,3 +11,5 @@ TODO
 - [ ] set up linting
 - [ ] set up testing
 - [ ] set up version constraints
+- [ ] create a hypothetical node backend (possibly figure out docker?)
+- [ ] try deploying various pieces
