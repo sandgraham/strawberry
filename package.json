@@ -3,7 +3,7 @@
   "workspaces": [
     "design"
   ],
-  "devDependencies": {
-    "typescript": "^4.1.2"
+  "dependencies": {
+    "typescript": "^4.2.3"
   }
 }
