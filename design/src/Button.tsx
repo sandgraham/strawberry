@@ -8,5 +8,5 @@ export interface ButtonProps {
 
 export function Button(props: ButtonProps) {
   const { isCool = false, ...restProps } = props;
-  return <button className={styles.Button} style={{ textTransform: isCool ? 'lowercase' : 'none' }} type="button" {...restProps} />;
+  return <button className={styles.Button} style={{ textTransform: isCool ? 'uppercase' : 'none' }} type="button" {...restProps} />;
 }

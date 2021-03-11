@@ -1,6 +1,5 @@
-import React from 'react';
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from '@storybook/react/types-6-0';
+import React, { Fragment, useState } from 'react';
+import { Story, Meta } from '@storybook/react';
 
 import { Button, ButtonProps } from './Button';
 
@@ -14,14 +13,24 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  isCool: true,
-  children: 'Very nice'
+export const Basic = Template.bind({});
+Basic.args = {
+  children: 'i am a button'
 };
 
-// export const Secondary = Template.bind({});
-// Secondary.args = {
-//   label: 'Button',
-// };
+export const Cool = Template.bind({});
+Cool.args = {
+  children: 'i am a cool button',
+  isCool: true,
+}
 
+type CounterChildren = (args: { count: number; tick: () => void }) => JSX.Element;
+function Counter({ children }: { children: CounterChildren }) {
+  const [count, setCount] = useState(0);
+  return children({ count, tick: () => setCount(s => s + 1) })
+}
+
+export const Counting: Story<ButtonProps> = (args) => <Counter>{({ count, tick }) => <Fragment><Button {...args} onClick={tick} />{count}</Fragment>}</Counter>;
+Counting.args = {
+  children: 'Click to count'
+}

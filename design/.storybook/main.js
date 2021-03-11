@@ -7,5 +7,9 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "storybook-css-modules-preset"
-  ]
+  ],
+  "reactOptions": {
+    fastRefresh: true,
+    strictMode: true
+  }
 }
