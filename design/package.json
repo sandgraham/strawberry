@@ -1,7 +1,7 @@
 {
   "name": "@strawberry/design",
   "version": "0.0.0",
-  "exports": "./index.ts",
+  "main": "./index.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

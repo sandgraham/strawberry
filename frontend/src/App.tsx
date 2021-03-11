@@ -1,14 +1,11 @@
 import React from 'react'
-import { DesignRoot, Button } from '@strawberry/design'
-import './App.css'
+import { Button } from '@strawberry/design'
 
 function App() {
   return (
-    <DesignRoot>
-      <main>
-        <Button>hello world!</Button>
-      </main>
-    </DesignRoot>
+    <main>
+      <Button>hello world!</Button>
+    </main>
   )
 }
 
