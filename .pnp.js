@@ -25,12 +25,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "design",
         "reference": "workspace:design"
+      },
+      {
+        "name": "frontend",
+        "reference": "workspace:frontend"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["design", ["workspace:design"]],
+      ["frontend", ["workspace:frontend"]],
       ["strawberry", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -8764,6 +8769,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["readable-stream", "npm:2.3.7"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["frontend", [
+        ["workspace:frontend", {
+          "packageLocation": "./frontend/",
+          "packageDependencies": [
+            ["frontend", "workspace:frontend"],
+            ["@types/react", "npm:17.0.3"],
+            ["@types/react-dom", "npm:17.0.2"],
+            ["@vitejs/plugin-react-refresh", "npm:1.3.1"],
+            ["react", "npm:17.0.1"],
+            ["react-dom", "virtual:4a59f245d98f1c390bb96ff2089b72cc507a57f57e7d0bc8f71f07e8fc2bfba2ea26c13810f27bbca34d754d87a20b57cff61dc08da9193876646655e8d5426d#npm:17.0.1"],
+            ["typescript", "patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"],
+            ["vite", "npm:2.0.5"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["fs-extra", [

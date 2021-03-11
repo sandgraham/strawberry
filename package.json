@@ -1,7 +1,8 @@
 {
   "name": "strawberry",
   "workspaces": [
-    "design"
+    "design",
+    "frontend"
   ],
   "dependencies": {
     "typescript": "^4.2.3"
